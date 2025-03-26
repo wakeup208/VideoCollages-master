@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Video Collages</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="intro_text">Hello! Now you can create an amazing collages with your camera!\nJust record a video, choose the best moments and apply any filters you want!</string>
+    <string name="explain_permissions">But... I guess you should allow me to work with your device. Can you give me some permissions?</string>
+    <string name="best_frames">Here you can choose the best frames of your future collage!</string>
+</resources>

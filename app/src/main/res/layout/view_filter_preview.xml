@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.azazellj.videocollages.ui.view.DrawingView
+        android:id="@+id/originalImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/_maxresdefault" />
+
+    <RelativeLayout
+        android:id="@+id/dividerView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/originalImageView">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/divider"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_chevron_left"
+            android:tint="@android:color/white" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_red_light" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/divider"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_chevron_right"
+            android:tint="@android:color/white" />
+    </RelativeLayout>
+</RelativeLayout>
