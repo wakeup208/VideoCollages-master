@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/titleIntro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
             android:textSize="64sp" />
 
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textIntro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:layout_marginTop="24dp"
             android:orientation="horizontal">
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/textPermissions"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
                 android:layout_weight="1"
                 android:text="@string/explain_permissions" />
 
-            <android.support.v7.widget.AppCompatButton
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/getPermissions"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
 
     </RelativeLayout>
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/nextScreen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

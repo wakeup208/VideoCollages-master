@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
 
 apply plugin: 'org.jetbrains.kotlin.android'
 
@@ -30,6 +32,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 

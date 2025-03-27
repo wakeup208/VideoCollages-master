@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
@@ -66,14 +66,14 @@
             </LinearLayout>
 
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:text="Here you can choose different filters for your images. Select any image for single filter or this bubbon below for applying any filter to all collage." />
 
 
-            <android.support.v7.widget.AppCompatButton
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/commonFilter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
                 android:text="Select one filter to all"
                 android:textColor="@color/grey_300" />
 
-            <android.support.v7.widget.AppCompatButton
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/saveToGallery"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
                 android:text="Save image to gallery"
                 android:textColor="@color/grey_300" />
 
-            <android.support.v7.widget.AppCompatButton
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/share"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
 
 
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <RelativeLayout
         android:id="@+id/progress"
@@ -109,7 +109,7 @@
         android:visibility="visible"
         tools:visibility="invisible">
 
-        <android.support.v4.widget.ContentLoadingProgressBar
+        <androidx.core.widget.ContentLoadingProgressBar
             style="@android:style/Widget.ProgressBar.Large"
             android:layout_width="48dp"
             android:layout_height="48dp"

@@ -11,12 +11,12 @@ import com.azazellj.videocollages.data.FilterType
 /**
  * Created by azazellj on 2/6/18.
  */
-class DrawingView : ImageView {
+class DrawingView : androidx.appcompat.widget.AppCompatImageView {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr)
     @SuppressLint("NewApi")
-    constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int, defStyleRes: Int) : super(context, attrs, defStyleAttr, defStyleRes)
+    //constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int, defStyleRes: Int) : super(context, attrs, defStyleAttr, defStyleRes)
 
     private var screenRatio: Float = 16f.div(9f)
     private var percentValue: Float = 0f
@@ -76,17 +76,17 @@ class DrawingView : ImageView {
 
         if (newImageWidth == 0 || newImageHeight == 0) return
 
-        mScaledBitmap = Bitmap.createScaledBitmap(originalBitmap, newImageWidth, newImageHeight, false)
+        mScaledBitmap = Bitmap.createScaledBitmap(originalBitmap!!, newImageWidth, newImageHeight, false)
         drawingAreaRect = Rect(0, 0, mScaledBitmap!!.width, mScaledBitmap!!.height)
 
         requestLayout()
     }
 
-    override fun onDraw(canvas: Canvas?) {
+    fun onDraw(canvas: Canvas?) {
         if (mScaledBitmap == null) return
         canvas!!.save()
-        canvas.drawBitmap(mScaledBitmap, 0f, 0f, null)
-        canvas.drawBitmap(mScaledBitmap, drawingAreaRect, drawingAreaRect, mPaint)
+        canvas.drawBitmap(mScaledBitmap!!, 0f, 0f, null)
+        canvas.drawBitmap(mScaledBitmap!!, drawingAreaRect, drawingAreaRect!!, mPaint)
         canvas.restore()
     }
 

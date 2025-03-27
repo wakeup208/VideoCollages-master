@@ -2,7 +2,6 @@ package com.azazellj.videocollages.ui.fragment
 
 import android.graphics.Bitmap
 import android.os.Bundle
-import android.support.v4.app.DialogFragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

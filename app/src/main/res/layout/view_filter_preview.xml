@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/originalImageView">
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -34,7 +34,7 @@
             android:layout_centerHorizontal="true"
             android:background="@android:color/holo_red_light" />
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"

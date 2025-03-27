@@ -2,12 +2,12 @@ package com.azazellj.videocollages.ui.fragment
 
 import android.graphics.Bitmap
 import android.os.Bundle
-import android.support.v4.app.DialogFragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import androidx.fragment.app.DialogFragment
 import com.azazellj.videocollages.R
 import com.azazellj.videocollages.data.FilterType
 import com.azazellj.videocollages.interfaces.OnFilterConfirm
